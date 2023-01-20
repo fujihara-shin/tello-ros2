@@ -6,6 +6,13 @@ workspace/src/build/
 workspace/src/lib/
 workspace/src/install/
 
+slam/install/
+slam/build/
+slam/src/__pycache__/
+slam/src/build/
+slam/src/lib/
+slam/src/install/
+
 .vscode/.ropeproject/
 
 log/

@@ -20,6 +20,7 @@ mkdir build
 cd build
 cmake ..
 make install -j8
+cd ../..
 
 echo " - Install G2O"
 apt install cmake libeigen3-dev libsuitesparse-dev qtdeclarative5-dev qt5-qmake libqglviewer-dev-qt5
@@ -33,7 +34,7 @@ make install -j8
 cd ../..
 
 echo " - Install ORB SLAM 2 (modified version w/o pangolin)"
-git clone https://github.com/alsora/ORB_SLAM2
+git clone https://github.com/fujihara-shin/ORB_SLAM2.git
 cd ORB_SLAM2
 chmod +x build.sh
 ./build.sh

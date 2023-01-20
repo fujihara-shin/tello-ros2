@@ -44,25 +44,25 @@ def generate_launch_description():
         ),
 
         # RViz data visualization tool
-        Node(
-            package='rviz2',
-            executable='rviz2',
-            output='screen',
-            namespace='/',
-            name='rviz2',
-            respawn=True,
-            arguments=['-d', '/home/tentone/Git/tello-slam/workspace/src/rviz.rviz']
-        ),
+        # Node(
+        #     package='rviz2',
+        #     executable='rviz2',
+        #     output='screen',
+        #     namespace='/',
+        #     name='rviz2',
+        #     respawn=True,
+        #     arguments=['-d', '/home/tentone/Git/tello-slam/workspace/src/rviz.rviz']
+        # ),
 
         # Static TF publisher
-        Node(
-            package='tf2_ros',
-            executable='static_transform_publisher',
-            namespace='/',
-            name='tf',
-            arguments=['0', '0', '0', '0', '0', '0', '1', 'map', 'drone'],
-            respawn=True
-        ),
+        # Node(
+        #     package='tf2_ros',
+        #     executable='static_transform_publisher',
+        #     namespace='/',
+        #     name='tf',
+        #     arguments=['0', '0', '0', '0', '0', '0', '1', 'map', 'drone'],
+        #     respawn=True
+        # ),
 
         # ORB SLAM
         # Node(

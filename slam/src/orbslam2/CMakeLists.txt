@@ -21,7 +21,7 @@ find_package(cv_bridge REQUIRED)
 find_package(message_filters REQUIRED)
 
 find_package(Boost COMPONENTS system) 
-find_package(OpenCV 3 REQUIRED)
+find_package(OpenCV 4 REQUIRED)
 find_package(Eigen REQUIRED)
 find_package(ORB_SLAM2 REQUIRED)
 
